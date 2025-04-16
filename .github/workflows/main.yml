@@ -13,9 +13,6 @@ jobs:
       - name: Install Dependencies
         run: 
           pip install --upgrade pip pyyaml
-      - name: Install Dependencies
-        run: |
-          pip install -r requirements.txt
       - name: Run Feed Generator
         run: python feed.py
       - name: Push Repo
